@@ -1,3 +1,4 @@
 用于的dnsmasq
-屏蔽广告的我的主机文件
+屏蔽广告的我的hosts文件
 可用于潘多拉的OpenWrt的或者centos
+hosts文件由yhosts和另外一个爱好者提供
