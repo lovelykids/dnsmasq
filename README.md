@@ -1,0 +1,3 @@
+用于的dnsmasq
+屏蔽广告的我的主机文件
+可用于潘多拉的OpenWrt的或者centos
