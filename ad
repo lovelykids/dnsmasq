@@ -1,6 +1,3 @@
-
-#version=201805031842
-#url=https://github.com/vokins/yhosts
 127.0.0.1 activate.adobe.com
 127.0.0.1 ereg.adobe.com
 127.0.0.1 hlrcv.stage.adobe.com
@@ -244,8 +241,6 @@
 127.0.0.1 re.taobao.com
 127.0.0.1 re.m.taobao.com
 127.0.0.1 show.re.taobao.com
-127.0.0.1 click.mz.simba.taobao.com
-127.0.0.1 click.simba.taobao.com
 127.0.0.1 click.tz.simba.taobao.com
 127.0.0.1 dsp.simba.taobao.com
 127.0.0.1 fav.simba.taobao.com
