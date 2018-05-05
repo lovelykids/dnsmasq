@@ -36,8 +36,8 @@ nameserver 119.29.29.29
 EOF
 
 # 下载广告缓存
-wget --no-check-certificate -qO - https://raw.githubusercontent.com/lovelykids/dnsmasq/master/ad.txt  > /etc/dnsmasq/ad.hosts
-wget --no-check-certificate -qO - https://raw.githubusercontent.com/lovelykids/dnsmasq/master/gg.txt > /etc/dnsmasq/gg.hosts
+wget --no-check-certificate -qO - https://raw.githubusercontent.com/lovelykids/dnsmasq/master/ad  > /etc/dnsmasq/ad.hosts
+wget --no-check-certificate -qO - https://raw.githubusercontent.com/lovelykids/dnsmasq/master/gg > /etc/dnsmasq/gg.hosts
 # 合并广告规则缓存
 #cat /etc/dnsmasq/adblocks/simpleu /etc/dnsmasq/adblocks/yhosts > /etc/dnsmasq/adblocks/noad
 # 删除下载缓存
@@ -52,8 +52,8 @@ cat > /etc/dnsmasq/hosts_update.sh <<EOF
 # 移动到用户命令文件夹
 cd /etc/dnsmasq/
 rm -rf *.hosts
-wget --no-check-certificate -qO - https://raw.githubusercontent.com/vokins/yhosts/master/hosts  > /etc/dnsmasq/ad.hosts
-wget --no-check-certificate -qO - https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts > /etc/dnsmasq/gg.hosts
+wget --no-check-certificate -qO - https://raw.githubusercontent.com/lovelykids/dnsmasq/master/ad  > /etc/dnsmasq/ad.hosts
+wget --no-check-certificate -qO - https://raw.githubusercontent.com/lovelykids/dnsmasq/master/gg > /etc/dnsmasq/gg.hosts
 /etc/init.d/dnsmasq restart
 EOF
 
