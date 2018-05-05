@@ -50,9 +50,11 @@ wget --no-check-certificate -qO - https://raw.githubusercontent.com/lovelykids/d
 cat > /etc/dnsmasq/hosts_update.sh <<EOF
 #!/bin/sh
 # 移动到用户命令文件夹
-cd /
+cd /etc/dnsmasq/
+rm -rf *.hosts
 wget --no-check-certificate -qO - https://raw.githubusercontent.com/vokins/yhosts/master/hosts  > /etc/dnsmasq/ad.hosts
 wget --no-check-certificate -qO - https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts > /etc/dnsmasq/gg.hosts
+/etc/init.d/dnsmasq restart
 EOF
 
 # 注入每8小时更新一次的任务
