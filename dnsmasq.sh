@@ -25,6 +25,8 @@ resolv-file=/etc/dnsmasq/resolv.conf
 # 添加广告规则路径
 addn-hosts=/etc/dnsmasq/ad.hosts
 addn-hosts=/etc/dnsmasq/gg.hosts
+# 添加用户自定义规则路径
+addn-hosts=/etc/dnsmasq/other.hosts
 EOF
 
 # 创建上游DNS配置文件
@@ -38,9 +40,9 @@ EOF
 # 下载广告缓存
 wget --no-check-certificate -qO - https://raw.githubusercontent.com/lovelykids/dnsmasq/master/ad  > /etc/dnsmasq/ad.hosts
 wget --no-check-certificate -qO - https://raw.githubusercontent.com/lovelykids/dnsmasq/master/gg > /etc/dnsmasq/gg.hosts
-# 合并广告规则缓存
-#cat /etc/dnsmasq/adblocks/simpleu /etc/dnsmasq/adblocks/yhosts > /etc/dnsmasq/adblocks/noad
-# 删除下载缓存
+wget --no-check-certificate -qO - https://raw.githubusercontent.com/lovelykids/dnsmasq/master/other > /etc/dnsmasq/other.hosts
+
+
 
 # 重启dnsmasq服务
 /etc/init.d/dnsmasq restart

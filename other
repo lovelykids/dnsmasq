@@ -1,0 +1,28 @@
+
+
+# Modified Hosts Start
+
+# Localhost (DO NOT REMOVE) Start
+127.0.0.1	localhost
+::1	localhost
+::1	ip6-localhost
+::1	ip6-loopback
+# Localhost (DO NOT REMOVE) End
+
+# Start
+127.0.0.1	dlied1.qq.com
+127.0.0.1	vmp.qq.com
+127.0.0.1	cgi.connect.qq.com
+127.0.0.1	pg.qq.com
+127.0.0.1	msdk.qq.com
+
+127.0.0.1	api.gifshow.com 
+127.0.0.1	jsmov2.a.yximgs.com 
+127.0.0.1	txmov2.a.yximgs.com 
+127.0.0.1	alimov2.a.yximgs.com
+# End
+
+
+
+
+
